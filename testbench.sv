@@ -1,5 +1,5 @@
 module testbench();
-	logic        clk;
+	logic            clk;
 	logic 		 reset;
 	logic [31:0] WriteData, DataAdder;
 	logic 		 MemoryWrite;
