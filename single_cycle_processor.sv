@@ -6,8 +6,7 @@ module arm( input logic          clk, reset,
 				input logic  [31:0] ReadData);
 				
 	logic [3:0] ALUFlags;
-	logic       RegisterWrite,
-					ALUSrc, MemtoReg, PCSrc;
+	logic       RegisterWrite, ALUSrc, MemtoReg, PCSrc;
 	logic [1:0] RegisterSrc, ImmSrc, ALUControl;
 	
 	controller c(clk, reset, Instructions[31:12], ALUFlags,
